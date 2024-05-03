@@ -10,8 +10,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . /code/
 
-RUN python /code/manage.py makemigrations --no-input
-
-RUN python /code/manage.py migrate --no-input
-RUN python /code/manage.py createsuperuser --no-input  --username=abishek  --email=abishek@gmail.com
 # CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
