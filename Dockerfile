@@ -13,7 +13,7 @@ ENV DJANGO_SUPERUSER_EMAIL=abishek@gmail.com
 ENV DJANGO_SUPERUSER_PASSWORD=abishek
 
 # Run Django management command to create superuser
-RUN python manage.py createsuperuser --noinput
+RUN python manage.py createsuperuser --no-input
 
 COPY . /code/
 
