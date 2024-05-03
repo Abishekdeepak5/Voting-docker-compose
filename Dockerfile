@@ -10,5 +10,5 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . /code/
 
-
+RUN python /code/voting/manage.py createsuperuser --no-input  --username=abishek  --email=abishek@gmail.com
 # CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
