@@ -22,5 +22,5 @@ services:
       - POSTGRES_USER=${SQL_USER}
       - POSTGRES_PASSWORD=${SQL_PASSWORD}
 
-volumns:
+volumes:
   postgres_data:
