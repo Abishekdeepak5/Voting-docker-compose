@@ -8,13 +8,11 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-ENV DJANGO_SUPERUSER_USERNAME=abishek
-ENV DJANGO_SUPERUSER_EMAIL=abishek@gmail.com
 ENV DJANGO_SUPERUSER_PASSWORD=abishek
 
 COPY . /code/
 # Run Django management command to create superuser
-RUN python manage.py createsuperuser --no-input
+RUN python manage.py createsuperuser --no-input --username=abishek --email=abishek@gmail.com
 
 
 # CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
