@@ -2,8 +2,7 @@ version: "3.8"
 
 services:
   web:
-    build:
-      content: .
+    build: .
     ports:
       - "8000:8000"
     command: ["sh","./start.sh"]
