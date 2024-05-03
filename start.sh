@@ -1,4 +1,4 @@
-RUN python manage.py createsuperuser --noinput \
+python manage.py createsuperuser --noinput \
     --username=abishek \
     --email=abishek@gmail.com \
     --password=abishek
